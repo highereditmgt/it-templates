@@ -11,7 +11,7 @@ clean:
 	-rm *.html *.docx
 
 %.html: %.md
-	pandoc -f markdown -t html -s $< -o $@
+	multimarkdown -t html $< > $@
 
 %.docx: %.md
 	pandoc -f markdown -t docx -s $< -o $@
