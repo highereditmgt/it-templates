@@ -20,7 +20,6 @@ This formal SLA helps set expectations for the service needed, to ensure the man
 ## Service description
 
 
-
 ## Costs
 
 | Service | Description | Cost |
