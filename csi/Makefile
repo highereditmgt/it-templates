@@ -1,24 +1,14 @@
 SOURCES := $(wildcard *.md)
 HTML_FILES := $(SOURCES:.md=.html)
 DOCX_FILES := $(SOURCES:.md=.docx)
-.PHONY: html docx clean all
+.PHONY: html docx all clean
 
-# FIXME this should be automated
-all: html docx 
-	make -C csi all
-	make -C policy all
-	make -C projects all
-	make -C services all
-
+all: html docx
 html: $(HTML_FILES)
 docx: $(DOCX_FILES)
 
 clean:
 	-rm *.html *.docx
-	make -C csi clean
-	make -C policy clean
-	make -C projects clean
-	make -C services clean
 
 %.html: %.md
 	multimarkdown -t html $< > $@
