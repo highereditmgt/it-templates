@@ -9,6 +9,7 @@ all: html docx
 	make -C policy all
 	make -C projects all
 	make -C services all
+	make -C misc all
 
 html: $(HTML_FILES)
 docx: $(DOCX_FILES)
