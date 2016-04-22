@@ -6,6 +6,10 @@
 
 The purpose of this process is to FIXME.
 
+## Scope
+
+The scope of this process is FIXME.
+
 ## Process owner
 
 The process owner for this process is FIXME (e.g. a role). The process owner is accountable for this process documentation being up-to-date and representative of the current process.
